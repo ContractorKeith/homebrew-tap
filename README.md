@@ -1,6 +1,6 @@
 # ContractorKeith Homebrew Tap
 
-Homebrew formulas for [ContractorKeith](https://github.com/ContractorKeith) tools.
+Homebrew formulae for [ContractorKeith](https://github.com/ContractorKeith) tools.
 
 ## Install
 
@@ -8,34 +8,22 @@ Homebrew formulas for [ContractorKeith](https://github.com/ContractorKeith) tool
 brew install ContractorKeith/tap/contractor-bid
 ```
 
-Or add the tap first:
+Or tap first, then install:
 
 ```bash
 brew tap ContractorKeith/tap
 brew install contractor-bid
 ```
 
-## Formulas
+## Formulae
 
 | Formula | Description |
-|---|---|
-| `contractor-bid` | AI-ready commercial construction bid workspaces for subcontractors. Core CLI plus Poppler PDF tools. |
-
-Note: the Homebrew formula installs the core CLI. For the MCP server and
-agent plugins (Claude Code, Codex, Cursor), use pipx instead:
-
-```bash
-pipx install "contractor-bid[mcp]"
-```
+|---------|-------------|
+| [`contractor-bid`](https://github.com/ContractorKeith/contractor-bid) | AI-ready commercial construction bid workspaces for subcontractors. Installs the `contractor-bid` CLI and the `contractor-bid-mcp` MCP server, with `poppler` included for PDF handling. |
 
 ## Updating a formula
 
-Formulas track the published PyPI sdist. To bump a version, update `url` and
-`sha256` (from `https://pypi.org/pypi/contractor-bid/json`) plus any changed
-resource blocks, then:
-
-```bash
-brew install --build-from-source ./Formula/contractor-bid.rb
-brew test contractor-bid
-brew audit --strict contractor-bid
-```
+Formula source templates live in each project repo (e.g. `contractor-bid/packaging/homebrew/`).
+To bump a release: update the `url` to the new tag, replace `sha256` with the new tarball hash,
+regenerate resources with `brew update-python-resources --extra-packages=mcp contractor-bid`,
+then `brew install --build-from-source` and `brew test` before pushing.
