@@ -1,8 +1,8 @@
 class PioneerTrail < Formula
   desc "Keyboard-only terminal trail survival game"
   homepage "https://github.com/ContractorKeith/pioneer-trail"
-  url "https://github.com/ContractorKeith/pioneer-trail/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "cd75168a49e76d9228f9ba1549cedb3ac08f3629c24640ce1ea87a346ba6eca5"
+  url "https://github.com/ContractorKeith/pioneer-trail/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "458669bf990b584cac62bcca384c4ffae7f8f2912a0c530d2e7b4120ff23679a"
   license "MIT"
 
   depends_on "rust" => :build
