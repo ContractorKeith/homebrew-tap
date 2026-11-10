@@ -22,6 +22,7 @@ brew install contractor-bid
 | [`feeder`](https://github.com/ContractorKeith/feeder) | Personal source-linked RSS/Atom digests, with optional local/API summaries. Prebuilt for Linux/macOS amd64/arm64. Install with `brew install ContractorKeith/tap/feeder`. |
 | [`contractor-bid`](https://github.com/ContractorKeith/contractor-bid) | AI-ready commercial construction bid workspaces for subcontractors. Installs the `contractor-bid` CLI and the `contractor-bid-mcp` MCP server, with `poppler` included for PDF handling. |
 | [`mdkb`](https://github.com/ContractorKeith/mdkb) | Local-first Markdown knowledge base: one Go binary with a CLI and a stdio MCP server, FTS5 search, wikilinks and backlinks, git-committed agent writes. Prebuilt for macOS and Linux. |
+| [`keelhaul`](https://github.com/ContractorKeith/keelhaul) | Deduplicating, encrypted backups to local disk, SFTP or S3-compatible storage. Prebuilt for Linux/macOS amd64/arm64. Install with `brew install ContractorKeith/tap/keelhaul`. |
 | [`punch`](https://github.com/ContractorKeith/punch) | Terminal punch list for you and your coding agents. Prebuilt for macOS and Linux x86_64. |
 
 ## Updating a formula
